@@ -11,6 +11,14 @@
         version: 4
         metric: cpu
         chart: false
+    widget:
+      type: glances
+        url: http://pve.heima:61208
+        username: villi
+        password: Dyxr6EAbDdDGfYU68vE7
+        version: 4
+        metric: memory
+        chart: false
 
 - search:
     provider: duckduckgo
