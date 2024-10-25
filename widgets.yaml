@@ -3,23 +3,15 @@
 # https://gethomepage.dev/configs/service-widgets
 
 - resources:
-    widget:
-      type: glances
-        url: http://pve.heima:61208
-        username: villi
-        password: Dyxr6EAbDdDGfYU68vE7
-        version: 4
-        metric: cpu
-        chart: false
-    widget:
-      type: glances
-        url: http://pve.heima:61208
-        username: villi
-        password: Dyxr6EAbDdDGfYU68vE7
-        version: 4
-        metric: memory
-        chart: false
+      cpu: true
+      memory: true
+      disk: /
 
 - search:
-    provider: duckduckgo
+    provider: google
     target: _blank
+
+- datetime:
+    text_size: xl
+    format:
+      timeStyle: short
