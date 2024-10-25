@@ -1,0 +1,25 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/settings
+
+title: Pjalli's House
+background: 
+  #image: https://res.cloudinary.com/icelandtours/g_auto,f_auto,c_fill,w_3840,q_auto:good/reykjavik_frikirkjuvegur_tjornin_summer_1be1eb439e.jpg
+  #image: https://media.cntraveler.com/photos/5f0e21d2d84f98d53313dd96/master/pass/Iceland-2020-GettyImages-1045856092.jpg
+  image: https://icepicjourneys.is/wp-content/uploads/2023/08/reflectfinal-scaled-1.jpg
+  blur: sm
+  opacity: 75
+useEqualHeights: true
+
+
+layout:
+  Media:
+    style: row
+    columns: 4
+  Hypervisor:
+    style: row
+    columns: 4
+
+providers:
+  openweathermap: openweathermapapikey
+  weatherapi: weatherapiapikey

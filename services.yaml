@@ -1,0 +1,104 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/services
+
+- Hypervisor:
+    - CPU Usage:
+        widget:
+          type: glances
+          url: http://pve.heima:61208
+          username: villi
+          password: Dyxr6EAbDdDGfYU68vE7
+          version: 4
+          metric: cpu
+          chart: false
+    - Memory Usage:
+        widget:
+          type: glances
+          url: http://pve.heima:61208
+          username: villi
+          password: Dyxr6EAbDdDGfYU68vE7
+          version: 4
+          metric: memory
+          chart: false
+    - Network:
+        widget:
+          type: glances
+          url: http://pve.heima:61208
+          username: villi
+          password: Dyxr6EAbDdDGfYU68vE7
+          metric: network:enp0s31f6
+    - Uptime:
+        widget:
+          type: glances
+          url: http://pve.heima:61208
+          username: villi
+          password: Dyxr6EAbDdDGfYU68vE7
+          metric: 
+
+- Media:
+    - Plex:
+        icon: plex.png
+        href: http://plex.heima:32400
+        widget:
+          type: plex
+          url: http://plex.heima:32400
+          key: viY_BkEq1S-VN5pvwVeM
+
+    - Sonarr:
+        icon: sonarr.png
+        href: http://sonarr.heima:8989
+        widget:
+          type: sonarr
+          url: http://sonarr.heima:8989
+          key: 326e2e1f48384a519c4e141abea8236c
+
+    - Radarr:
+        icon: radarr.png
+        href: http://radarr.heima:7878
+        widget:
+          type: radarr
+          url: http://radarr.heima:7878
+          key: e486e20a13fa4e70b6f9f526c151323e
+
+    - Bazarr:
+        icon: bazarr.png
+        href: http://bazarr.heima:6767
+        widget:
+          type: bazarr
+          url: http://bazarr.heima:6767
+          key: 0af4f0838e9f1ec7ffe7b44eda658945
+
+    - qBittorrent:
+        icon: qbittorrent.png
+        href: http://qbittorrent.heima:8090
+        widget:
+          type: qbittorrent
+          url: http://qbittorrent.heima:8090
+          username: villi
+          password: 9K96NwM27ijX2Z9UAEAk
+
+    - Overseerr:
+        icon: overseerr.png
+        href: http://overseerr.heima:5055
+        widget:
+          type: overseerr
+          url: http://overseerr.heima:5055
+          key: MTcyOTQ1MTQzNTk0ODBlZDkyMzZkLTg3ZWYtNGFjZS1iOWVhLTc4YzdlNTk1YzhjMw==
+
+    - Tautulli:
+        icon: tautulli.png
+        href: http://tautulli.heima:8181
+        widget:
+          type: tautulli
+          url: http://tautulli.heima:8181
+          key: eb5bd04c4a0b4d74bda957bb05bdfefc
+          enableUer: true
+
+    - Prowlarr:
+        icon: prowlarr.png
+        href: http://prowlarr.heima:9696
+        widget:
+          type: prowlarr
+          url: http://prowlarr.heima:9696
+          key: 7127264324994896a27533f1eba1fcc4
