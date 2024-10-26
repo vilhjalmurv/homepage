@@ -43,7 +43,7 @@
         widget:
           type: plex
           url: http://plex.heima:32400
-          key: viY_BkEq1S-VN5pvwVeM
+          key: "{{PLEX_TOKEN}}"
 
     - Sonarr:
         icon: sonarr.png
@@ -51,7 +51,7 @@
         widget:
           type: sonarr
           url: http://sonarr.heima:8989
-          key: 326e2e1f48384a519c4e141abea8236c
+          key: "{{SONARR_API_KEY}}"
 
     - Radarr:
         icon: radarr.png
@@ -59,7 +59,7 @@
         widget:
           type: radarr
           url: http://radarr.heima:7878
-          key: e486e20a13fa4e70b6f9f526c151323e
+          key: "{{RADARR_API_KEY}}"
 
     - Bazarr:
         icon: bazarr.png
@@ -67,7 +67,7 @@
         widget:
           type: bazarr
           url: http://bazarr.heima:6767
-          key: 0af4f0838e9f1ec7ffe7b44eda658945
+          key: "{{BAZARR_API_KEY}}"
 
     - qBittorrent:
         icon: qbittorrent.png
@@ -75,8 +75,8 @@
         widget:
           type: qbittorrent
           url: http://qbittorrent.heima:8090
-          username: villi
-          password: 9K96NwM27ijX2Z9UAEAk
+          username: "{{QBIT_USER}}"
+          password: "{{QBIT_PASS}}"
 
     - Overseerr:
         icon: overseerr.png
@@ -84,7 +84,7 @@
         widget:
           type: overseerr
           url: http://overseerr.heima:5055
-          key: MTcyOTQ1MTQzNTk0ODBlZDkyMzZkLTg3ZWYtNGFjZS1iOWVhLTc4YzdlNTk1YzhjMw==
+          key: "{{OVERSEERR_API_KEY}}"
 
     - Tautulli:
         icon: tautulli.png
@@ -92,7 +92,7 @@
         widget:
           type: tautulli
           url: http://tautulli.heima:8181
-          key: eb5bd04c4a0b4d74bda957bb05bdfefc
+          key: "{{TAUTULLI_API_KEY}}"
           enableUer: true
 
     - Prowlarr:
@@ -101,4 +101,4 @@
         widget:
           type: prowlarr
           url: http://prowlarr.heima:9696
-          key: 7127264324994896a27533f1eba1fcc4
+          key: "{{PROWLARR_API_KEY}}"
